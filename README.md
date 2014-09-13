@@ -1,5 +1,5 @@
 
-Frameworks:
+== Frameworks ==
 
 Angular
 Gulp (runner)
@@ -8,7 +8,7 @@ Karma (testrunner)
 
 
 
-Dependencies:
+== Dependencies ==
 
 npm install -g karma
 npm install -g karma-cli
