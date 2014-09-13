@@ -1,10 +1,19 @@
 'use strict';
 
-/**
- * De footer controller
- * @param  {[type]} $scope
- * @return {[type]}
- */
-angular.module('garminUploader').controller('FooterController', ['$scope', function($scope) {
-	$scope.fullYear = new Date().getFullYear();
+angular.module('simpleCalculator', []);
+
+
+angular.module('simpleCalculator').controller('CalculatorController', ['$scope', function($scope) {
+
+	$scope.currentValue = 0;
+	
+	$scope.add = function(value) {
+		$scope.currentValue += value;
+	};
+
+	$scope.substract= function(value) {
+		$scope.add(-value);
+	}
+
+
 }]);

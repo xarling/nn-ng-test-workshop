@@ -13,12 +13,12 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
 
-    // list of files / patterns to load in the browser
+    // list of files / patterns to load in the browser, the other matters
     files: [
-      './www/js/**/*.js',
       './www/lib/**/*.js',
-      './test/**/*.js',
-      './test/lib/angular-mocks.js'
+      './test/lib/angular-mocks.js',
+      './www/js/**/*.js',
+      './test/**/*.js'
     ],
 
 
@@ -49,7 +49,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
 
     // enable / disable watching file and executing tests whenever any file changes
@@ -58,7 +58,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'PhantomJS'],
+    browsers: ['PhantomJS', 'Chrome'],
 
 
     // Continuous Integration mode
