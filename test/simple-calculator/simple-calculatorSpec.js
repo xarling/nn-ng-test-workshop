@@ -1,3 +1,4 @@
+'use strict';
 
 
 describe('SimpleCalculator unit test', function() {
