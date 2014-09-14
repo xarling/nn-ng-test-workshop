@@ -13,7 +13,11 @@ angular.module('simpleCalculator').controller('CalculatorController', ['$scope',
 
 	$scope.substract= function(value) {
 		$scope.add(-value);
-	}
+	};
+
+	$scope.multiply = function(value) {
+		$scope.currentValue *= value;
+	};
 
 
 }]);
