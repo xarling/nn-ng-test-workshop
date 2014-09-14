@@ -35,6 +35,12 @@ describe('SimpleCalculator unit test', function() {
 	  		expect(scope.currentValue).toEqual(4);
 	  	});
 
+	  	it('should have a currentValue of 2 when adding 2.45 with the currentValue of 2.101', function() {
+	  		scope.currentValue = 2.101;
+	  		scope.add(2.45);
+	  		expect(scope.currentValue).toEqual(4.551);
+	  	});
+
   	});
 
   	describe('substracting', function() {
